@@ -2,7 +2,7 @@
 How to setup two HDMI (x2) on Jetson, configurations, etc.
 
 
-## What lines should be changed? 
+## What lines on dtb file should be changed? 
 
 ## Files
 
