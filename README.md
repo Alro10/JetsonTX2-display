@@ -1,9 +1,59 @@
 # JetsonTX2-display
-How to setup two HDMI (x2) on Jetson, configurations, etc.
+How to setup two HDMI (x2) on Jetson, configurations, etc. Kernel 28.1
 
 
-## What lines on dtb file should be changed? 
+## What lines should be changed?
 
+**Files**
+
+-tegra186-quill-p3310-1000-c03-00-base.dtb
+
+-tegra186-quill-p3310-1000-c03-00-dsi-hdmi-dp.dtb
+
+
+```
+
+nvdisplay@15200000{
+
+
+status = "okay";
+
+}
+
+nvdisplay@15210000
+
+{
+
+
+status = "okay";
+
+}
+
+nvdisplay@15220000 {
+
+status = "okay";
+
+}
+
+hdmi-display {
+
+status = "okay";
+
+}
+
+sor {
+
+status = "okay";
+
+}
+
+sor1 {
+
+status = "okay";
+
+}
+
+```
 ## Files
 
 
